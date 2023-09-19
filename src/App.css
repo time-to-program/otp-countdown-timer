@@ -1,9 +1,13 @@
-/* * {
+/* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
   font-family: "Poppins", sans-serif;
   margin: 0;
   outline: none;
 }
 
+/* Container styles */
 .container {
   width: 100vw;
   height: 100vh;
@@ -11,34 +15,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(108deg, #E0E0F9 0%, #DADAFF 100%);
+  background: linear-gradient(108deg, #e0e0f9 0%, #dadaff 100%);
 }
 
+/* Card styles */
 .card {
   background-color: #ffffff;
   padding: 24px;
   border-radius: 10px;
 }
 
+/* Header styles */
 h4 {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
-  color: #28152F;
+  color: #28152f;
 }
 
+/* Input field styles */
 input {
   width: 300px;
   border-radius: 6px;
-  border: 1.5px solid #DEE1EA;
+  border: 1.5px solid #dee1ea;
   padding: 12px 20px;
 }
 
+/* Input field focus styles */
 input:focus {
-  border-color: #506CFF;
+  border-color: #506cff;
 }
 
+/* Countdown text styles */
 .countdown-text {
   display: flex;
   align-items: center;
@@ -46,21 +55,23 @@ input:focus {
   margin: 24px 0px;
 }
 
+/* Countdown text paragraph styles */
 .countdown-text > p {
   font-size: 13px;
   font-weight: 400;
-  color: #2D1D35;
+  color: #2d1d35;
 }
 
+/* Countdown text button styles */
 .countdown-text > button {
   background-color: #fff;
   border: none;
-  color: #FE5B00;
   font-weight: 500;
   text-decoration: underline;
   cursor: pointer;
 }
 
+/* Submit button styles */
 .submit-btn {
   width: 100%;
   border: none;
@@ -69,5 +80,12 @@ input:focus {
   font-size: 15px;
   font-weight: 500;
   padding: 10px;
-  background: linear-gradient(91deg, #9076FC 0%, #6950FF 100%);
-} */
+  background: linear-gradient(91deg, #9076fc 0%, #6950ff 100%);
+  transition: all ease 0.6s;
+}
+
+/* Submit button hover styles */
+.submit-btn:hover {
+  color: #6950ff;
+  background: #e6e0ffbf;
+}
